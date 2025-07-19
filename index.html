@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINA | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fdfdfd;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: 600;
+        }
+        nav .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        main {
+            padding: 2em 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 4em 1em;
+            background: url('https://images.unsplash.com/photo-1551024601-bec78aea704b') center/cover no-repeat;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+            align-items: center;
+        }
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .about-text {
+            padding: 1em;
+        }
+        .features {
+            margin-top: 4em;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+        .feature {
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(33.333% - 2em);
+            text-align: center;
+        }
+        .feature i {
+            font-size: 2em;
+            color: #f39c12;
+            margin-bottom: 0.5em;
+        }
+        .testimonials {
+            margin: 4em 0;
+            padding: 2em;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+        .testimonial {
+            margin-bottom: 2em;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 0.5em;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1em;
+            margin-top: 4em;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .cta {
+            text-align: center;
+            padding: 3em 1em;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin: 4em 0;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 0.8em 2em;
+            background: #f39c12;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .features .feature {
+                width: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .features .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NINA</div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Reservations</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to NINA</h1>
+            <p>Experience a culinary journey like no other</p>
+        </section>
+        <section class="about">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8" alt="Restaurant Interior">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>NINA is a culinary haven where the art of cooking meets the passion for fine dining. Established in the heart of the city, we offer a unique blend of exquisite flavors and exceptional service. Our chefs are committed to crafting dishes that not only tantalize your taste buds but also offer a visual feast with every plate.</p>
+                <p>Our restaurant is designed to provide a serene escape from the bustling city life, allowing guests to enjoy a relaxed dining experience. Whether it's a casual lunch, a romantic dinner, or a celebratory gathering, NINA promises to deliver an unforgettable experience.</p>
+                <ul>
+                    <li>Gourmet cuisine</li>
+                    <li>Seasonal ingredients</li>
+                    <li>Elegant ambiance</li>
+                    <li>Customized events</li>
+                </ul>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-utensils"></i>
+                <h3>Culinary Excellence</h3>
+                <p>Our chefs use the finest ingredients to create dishes that are both innovative and authentic.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-wine-glass-alt"></i>
+                <h3>Fine Wines</h3>
+                <p>We offer an extensive selection of wines to complement your dining experience perfectly.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>Exceptional Service</h3>
+                <p>Our staff is dedicated to providing a memorable dining experience with personalized attention.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Dining at NINA was an unforgettable experience. The atmosphere, the food, and the service were all top-notch!"</p>
+                <strong>- Emily R.</strong>
+            </div>
+            <div class="testimonial">
+                <p>"The culinary creations at NINA are nothing short of art. Highly recommended for anyone looking to indulge."</p>
+                <strong>- James L.</strong>
+            </div>
+        </section>
+        <section class="gallery">
+            <img src="https://images.unsplash.com/photo-1543353071-087092ec393f" alt="Delicious Dish">
+            <img src="https://images.unsplash.com/photo-1524182576061-6a7d5f1a6be0" alt="Fine Dining Table">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Gourmet Dessert">
+        </section>
+        <section class="cta">
+            <h2>Book Your Table Now</h2>
+            <p>Reserve your spot at NINA and embark on a culinary journey you won't soon forget.</p>
+            <a href="#">Reserve Now</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 NINA | Designed by Creative Web Solutions</p>
+        <p>Follow us on <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i></p>
+    </footer>
+</body>
+</html>

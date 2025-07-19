@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINA | FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: 600;
+        }
+        nav .logo {
+            font-family: 'Lobster', cursive;
+            font-size: 1.8em;
+        }
+        main {
+            padding: 2em 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .faq-intro {
+            text-align: center;
+            padding: 3em 1em;
+            background: url('https://images.unsplash.com/photo-1565299525341-3a7c3133fdcf') center/cover no-repeat;
+            color: #fff;
+        }
+        .faq-intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .faq-section {
+            margin: 3em 0;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .faq {
+            margin-bottom: 2em;
+        }
+        .faq h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+            color: #f39c12;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .faq p {
+            display: none;
+            margin: 0;
+        }
+        .faq h3:hover {
+            color: #e67e22;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4em;
+        }
+        .contact-info div {
+            flex: 1;
+            margin: 0 1em;
+            text-align: center;
+        }
+        .contact-info i {
+            font-size: 2em;
+            color: #f39c12;
+            margin-bottom: 0.5em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+            }
+            .contact-info div {
+                margin-bottom: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NINA</div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Reservations</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="faq-intro">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your inquiries, expertly answered</p>
+        </section>
+        <section class="faq-section">
+            <div class="faq">
+                <h3>What are your opening hours?</h3>
+                <p>We are open Monday to Friday from 11:00 AM to 11:00 PM, and on weekends from 10:00 AM to midnight.</p>
+            </div>
+            <div class="faq">
+                <h3>Do you offer vegetarian options?</h3>
+                <p>Yes, our menu includes a variety of vegetarian and vegan dishes crafted with fresh, local ingredients.</p>
+            </div>
+            <div class="faq">
+                <h3>Can I book a table online?</h3>
+                <p>Absolutely, you can make reservations directly through our website or by calling us at any time.</p>
+            </div>
+            <div class="faq">
+                <h3>Is parking available?</h3>
+                <p>Yes, we offer complimentary valet parking for all our guests.</p>
+            </div>
+        </section>
+        <section class="contact-info">
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <h4>Call Us</h4>
+                <p>+123 456 7890</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Visit Us</h4>
+                <p>123 Culinary Street, Food City</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <h4>Email Us</h4>
+                <p>info@nina.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 NINA | All Rights Reserved</p>
+        <p>Follow us on <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i></p>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+
+Here is the continuation of the FAQ page with an additional section and concluding footer:
+
+
+    <main>
+        <!-- Existing sections... -->
+
+        <section class="faq-intro">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your inquiries, expertly answered</p>
+        </section>
+        <section class="faq-section">
+            <!-- Existing FAQs... -->
+            <div class="faq">
+                <h3>Do you accommodate large group reservations?</h3>
+                <p>Yes, NINA is the perfect venue for group dining, and we can accommodate large parties with prior notice.</p>
+            </div>
+            <div class="faq">
+                <h3>Are gift cards available?</h3>
+                <p>Gift cards are available for purchase on our website and in-store, making them a perfect gift for any occasion.</p>
+            </div>
+        </section>
+        <section class="contact-info">
+            <!-- Existing contact info... -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 NINA | All Rights Reserved</p>
+        <p>Follow us on <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i></p>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+This completes the FAQ page for NINA, including all required sections and features, while ensuring that the page is interactive with collapsible FAQ answers.
+Certainly! Here's a continuation and completion of the FAQ page, ensuring a polished finish with all necessary elements included:
+
+
+    <main>
+        <!-- Existing sections... -->
+
+        <section class="faq-intro">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your inquiries, expertly answered</p>
+        </section>
+        <section class="faq-section">
+            <!-- Existing FAQs... -->
+            <div class="faq">
+                <h3>Do you accommodate large group reservations?</h3>
+                <p>Yes, NINA is the perfect venue for group dining, and we can accommodate large parties with prior notice.</p>
+            </div>
+            <div class="faq">
+                <h3>Are gift cards available?</h3>
+                <p>Gift cards are available for purchase on our website and in-store, making them a perfect gift for any occasion.</p>
+            </div>
+        </section>
+        <section class="contact-info">
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <h4>Call Us</h4>
+                <p>+123 456 7890</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Visit Us</h4>
+                <p>123 Culinary Street, Food City</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <h4>Email Us</h4>
+                <p>info@nina.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 NINA | All Rights Reserved</p>
+        <p>Follow us on 
+            <a href="#" style="color: #fff; text-decoration: none;">
+                <i class="fab fa-facebook"></i>
+            </a> 
+            <a href="#" style="color: #fff; text-decoration: none;">
+                <i class="fab fa-instagram"></i>
+            </a> 
+            <a href="#" style="color: #fff; text-decoration: none;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </p>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+This HTML document ensures that all elements are responsive, visually appealing, and functional, providing users with a seamless experience. The script allows users to expand and collapse FAQ items by clicking on the question headers. The footer includes social media links for enhanced connectivity and engagement.
+Certainly, let's expand on the FAQ page with additional interactive features and ensure a polished finish:
